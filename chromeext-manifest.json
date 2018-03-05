@@ -1,0 +1,14 @@
+ "icons": {
+        "16":"/img/icon_16x16.png",
+        "18":"/img/icon_18x18.png",
+        "22":"/img/icon_22x22.png",
+        "24":"/img/icon_24x24.png",
+        "32":"/img/icon_32x32.png",
+        "48":"/img/icon_48x48.png",
+        "64":"/img/icon_64x64.png",
+        "96":"/img/icon_96x96.png",
+        "128":"/img/icon_128x128.png",
+        "192":"/img/icon_192x192.png",
+        "256":"/img/icon_256x256.png",
+        "512":"/img/icon_512x512.png"
+   }
