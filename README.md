@@ -1,6 +1,6 @@
 # Fire🔥Note
 
-Firenote is a no bullshit note taker, and lightweight text editor by Ray Kooyenga. It relies on local storage for fast resilient saving of data. 
+Firenote is a no bullshit note taker, and lightweight text editor. It relies on local storage for fast resilient saving of data. 
 
 ### :radio_button: Use Case
 Firenote is not a ubiquitious solution to mold jello, pickup chicks, and replace your ti-92 calculator. It's a simple dedicated tool for an exact need, which it fulfills better than any other solution thus far employed for this specific use-case of last-second saving when things are going down and memory is tight. 
@@ -24,9 +24,10 @@ Firenote has many incarnations, Firenote SQL, Firenote LiveNotes, QuickNote. eac
 
 [gist](https://gist.github.com/deadflowers/ac211bd18ede4b6e73ac5679f114c178#README.md)
 
-by ray kooyenga
 
-@deadflowers
+ by [**Ray Kooyenga**](https://github.com/rkooyenga)
+ aka 
+[**@deadflowers**](https://github.com/deadflowers)
 
 @rkooyenga
 
