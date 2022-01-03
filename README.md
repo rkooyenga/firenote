@@ -16,6 +16,8 @@ In it's earliest incarnation, it was a *scriptlet/bookmarklet* to save quick not
 
 Doubled use case was I also by tragic but kinda hilarious coincidence had a machine that was overheating and would restart when over tasked (something I get a warning about in advance in the form of extreme sluggishness). Yes, I had two distinct reasons why my machines would randomly reboot and kill all my work and the importance of said work which was high stakes, makes this problem all the funnier. The bookmarklet script was a great solution. Then I put an autosave timer on it with local storage. Then I moved it to a domain and from there started playing with other save methods for fun and learning. Most of those alternates have been lost to time but I keep this page/version around as a memory for how the project started and the reasons why as it was an adventurous period in my life. 
 
+> Notes: This version is older than the final draft that was lost. Also the AWS servers hosting fonts, styles, and alternate versions are no longer running so many references need updating or commenting out.
+
 <!-- 
 [FireNote](http://firenote.info)
 
