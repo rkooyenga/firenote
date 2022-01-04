@@ -474,8 +474,8 @@ if (screen.width <= 580) {
 }
   
 
-if (window.localStorage.getItem('value')){
-  area.value = window.localStorage.getItem('value');
+if (localStorage.getItem('value')){
+  area.value = localStorage.getItem('value');
 } else {
   area.placeholder = 'Just Type.';
 }
@@ -496,8 +496,8 @@ window.localStorage.setItem('timestamp', (new Date()).getTime());
   }, false);
   
 window.addEventListener('touchend', function () {
-window.localStorage.setItem('value', area.value);
-window.localStorage.setItem('timestamp', (new Date()).getTime());
+localStorage.setItem('value', area.value);
+localStorage.setItem('timestamp', (new Date()).getTime());
   }, false);
   
   /*
