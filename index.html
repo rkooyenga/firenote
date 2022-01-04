@@ -4,10 +4,11 @@
     <meta charset="utf-8">
     <base target="_blank">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-
+<!--
 <link rel="preconnect" href="https://d39dlwgeopmdw0.cloudfront.net">
 <link rel="dns-prefetch" href="https://d39dlwgeopmdw0.cloudfront.net">
 <link rel="prefetch" href="https://d39dlwgeopmdw0.cloudfront.net/assets/web/hbr.css">
+-->
 <!--
 <link rel="prefetch" href="https://d39dlwgeopmdw0.cloudfront.net/assets/web/resources/fonts/GuardianTextEgyp-Regular-Web.woff">
 <link rel="prefetch" href="https://d39dlwgeopmdw0.cloudfront.net/assets/web/resources/fonts/NationalWebLF-Regular.woff">
@@ -31,9 +32,9 @@
 -->
 <!--
 <script> function ready(){.exec(function(data){ console.timeEnd('Total operating time'); document.body.innerHTML += '<pre>'+JSON.stringify(data, null, ' ')+'</pre>'; }); }; };</script>
--->
-<!--    
+-->    
     <link rel="canonical" href="https://rkooyenga.githib.io/firenote/">
+<!--
     <link rel="manifest" href="manifest.json">
 -->
     
@@ -453,11 +454,13 @@ opacity:0.96;
  
   var area = document.createElement('textarea');
 
-  /*!document.querySelector('#content').style.width = window.innerWidth;
+  /*
+  !document.querySelector('#content').style.width = window.innerWidth;
   document.querySelector('#content').style.width = '100vw'; 
   area.style.width = window.innerWidth;
   area.style.width=parseInt(window.innerWidth*.98, 10);
-  area.style.height=parseInt(screen.height*.90, 10);*/
+  area.style.height=parseInt(screen.height*.90, 10);
+  */
   area.style.width = '100vw'; 
   area.style.height = '95vh';
   area.style.margin='0px 0px 16px';  
@@ -479,16 +482,18 @@ if (window.localStorage.getItem('value')){
 window.localStorage.setItem('value', area.value);
 window.localStorage.setItem('timestamp', (new Date()).getTime());
   }, false);
+  
     area.addEventListener('mouseup', function () {
 window.localStorage.setItem('value', area.value);
 window.localStorage.setItem('timestamp', (new Date()).getTime());
   }, false);
+  
  area.addEventListener('mousedown', function () {
 window.localStorage.setItem('value', area.value);
 window.localStorage.setItem('timestamp', (new Date()).getTime());
   }, false);
   
- document.getElementById('area').addEventListener('input', function () {
+ area.addEventListener('input', function () {
 window.localStorage.setItem('value', area.value);
 window.localStorage.setItem('timestamp', (new Date()).getTime());
   }, false);
