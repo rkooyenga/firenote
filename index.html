@@ -495,13 +495,18 @@ window.localStorage.setItem('value', area.value);
 window.localStorage.setItem('timestamp', (new Date()).getTime());
   }, false);
   
+  area.addEventListener('input', function () {
+window.localStorage.setItem('value', area.value);
+window.localStorage.setItem('timestamp', (new Date()).getTime());
+  }, false);
+  
   /*
 document.getElementById('textboxid').addEventListener('input', function () {
 window.localStorage.setItem('value', area.value);
 window.localStorage.setItem('timestamp', (new Date()).getTime());
   }, false);
   */
-
+/*
   function androidinput() {
 window.localStorage.setItem('value', area.value);
 window.localStorage.setItem('timestamp', (new Date()).getTime());
@@ -514,6 +519,7 @@ s1g1.setAttribute("oninput","androidinput()");
 window.localStorage.setItem('value', area.value);
 window.localStorage.setItem('timestamp', (new Date()).getTime());
   }, false);
+  */
   
 function updateLog() {
 var delta = 0;
