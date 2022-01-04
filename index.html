@@ -263,6 +263,7 @@ text-shadow: 0 0.032em 0 #b0b0b0, 0px 0.15em 0.11em rgba(0,0,0,0.15), 0px 0.25em
 
 </style>
 
+<!--
 <noscript>
 <link rel="stylesheet" href="https://d39dlwgeopmdw0.cloudfront.net/assets/web/hbr.css">
 <link rel="font" href="https://d39dlwgeopmdw0.cloudfront.net/assets/web/resources/fonts/GuardianTextEgyp-Regular-Web.woff">
@@ -270,7 +271,8 @@ text-shadow: 0 0.032em 0 #b0b0b0, 0px 0.15em 0.11em rgba(0,0,0,0.15), 0px 0.25em
 <link rel="font" href="https://d39dlwgeopmdw0.cloudfront.net/assets/web/resources/fonts/NationalWebLF-Extrabold.woffs">
 </noscript>
 <link href="https://d39dlwgeopmdw0.cloudfront.net/assets/web/hbr.css" media="all" type="text/css" charset="UTF-8"  rel="stylesheet" /> 
-
+-->
+   
 <style type="text/css">
 
   h1 {
@@ -438,11 +440,13 @@ opacity:0.96;
     saveTxtButton.download='file-download-firenote-txt.html'; 
     saveTxtButton.href='data:text/html;charset=utf-8,'+window.localStorage.getItem('value').replace(/^\s+|\s+$/g,"");
   });
+/*  
     var saveHTMLButton = document.getElementById('saveHTMLButton'); 
     saveHTMLButton.addEventListener('click', function() { 
     saveHTMLButton.download='file-download-firenote-txt.html'; 
     saveHTMLButton.href='data:text/html;charset=utf-8,'+window.localStorage.getItem('value').replace(/^\s+|\s+$/g,"");
   });
+*/
 </script> 
    
 <script>
@@ -484,7 +488,7 @@ window.localStorage.setItem('value', area.value);
 window.localStorage.setItem('timestamp', (new Date()).getTime());
   }, false);
   
- document.getElementById("area").addEventListener("input", function () {
+ document.getElementById('area').addEventListener('input', function () {
 window.localStorage.setItem('value', area.value);
 window.localStorage.setItem('timestamp', (new Date()).getTime());
   }, false);
