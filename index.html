@@ -418,8 +418,10 @@ opacity:0.96;
     &nbsp;
     <a href="" onclick="javascript:saveTxtButton;" class="text-button" id="saveTxtButton" type="text/html" download="file-download-firenote-txt.txt">Download TXT</a>
     &nbsp;
-    <a href="" onclick="javascript:saveHTMLButton;" class="text-button" id="saveHTMLButton" type="text/html" download="file-download-firenote-txt.html">Download HTML</a>
+ <!--
+   <a href="" onclick="javascript:saveHTMLButton;" class="text-button" id="saveHTMLButton" type="text/html" download="file-download-firenote-txt.html">Download HTML</a>
     &nbsp;&nbsp;
+ -->
     <a id="twitter" href="https://twitter.com/intent/follow?original_referer=https%3A%2F%2F%2Frkooyenga.github.com%2Ffirenote%2F&ref_src=twsrc%5Etfw&region=follow_link&screen_name=rayktweets&tw_p=followbutton"
       rel="noopener" target="_blank" title="Follow @rayktweets">
       <svg viewbox="0 0 400 400">
@@ -478,6 +480,10 @@ window.localStorage.setItem('value', area.value);
 window.localStorage.setItem('timestamp', (new Date()).getTime());
   }, false);
  area.addEventListener('mousedown', function () {
+window.localStorage.setItem('value', area.value);
+window.localStorage.setItem('timestamp', (new Date()).getTime());
+  }, false);
+ area.addEventListener('input', function () {
 window.localStorage.setItem('value', area.value);
 window.localStorage.setItem('timestamp', (new Date()).getTime());
   }, false);
