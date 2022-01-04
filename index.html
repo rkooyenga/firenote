@@ -510,6 +510,10 @@ window.localStorage.setItem('timestamp', (new Date()).getTime());
 var s1g1 = document.getElementById("textboxid");
 s1g1.setAttribute("oninput","androidinput()");
    
+  document.getElementById('textboxid').addEventListener('input', function () {
+window.localStorage.setItem('value', area.value);
+window.localStorage.setItem('timestamp', (new Date()).getTime());
+  }, false);
   
 function updateLog() {
 var delta = 0;
