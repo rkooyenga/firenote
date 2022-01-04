@@ -483,10 +483,12 @@ window.localStorage.setItem('timestamp', (new Date()).getTime());
 window.localStorage.setItem('value', area.value);
 window.localStorage.setItem('timestamp', (new Date()).getTime());
   }, false);
- area.addEventListener('input', function () {
+  
+ document.getElementById("area").addEventListener("input", function () {
 window.localStorage.setItem('value', area.value);
 window.localStorage.setItem('timestamp', (new Date()).getTime());
   }, false);
+  
 function updateLog() {
 var delta = 0;
 if (window.localStorage.getItem('value')) {
