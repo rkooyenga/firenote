@@ -454,6 +454,7 @@ opacity:0.96;
  
   var area = document.createElement('textarea');
    area.id= "textboxid";
+   area.oninput = androidinput();
   
   /*
   !document.querySelector('#content').style.width = window.innerWidth;
@@ -494,10 +495,19 @@ window.localStorage.setItem('value', area.value);
 window.localStorage.setItem('timestamp', (new Date()).getTime());
   }, false);
   
+  /*
 document.getElementById('textboxid').addEventListener('input', function () {
 window.localStorage.setItem('value', area.value);
 window.localStorage.setItem('timestamp', (new Date()).getTime());
   }, false);
+  */
+
+  function androidinput() {
+window.localStorage.setItem('value', area.value);
+window.localStorage.setItem('timestamp', (new Date()).getTime());
+  };
+ 
+  
   
 function updateLog() {
 var delta = 0;
