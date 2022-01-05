@@ -438,8 +438,8 @@ opacity:0.96;
 <script>
   var saveTxtButton = document.getElementById('saveTxtButton'); 
   saveTxtButton.addEventListener('click', function() { 
-    saveTxtButton.download='file-download-firenote-txt.html'; 
-    saveTxtButton.href='data:text/html;charset=utf-8,'+window.localStorage.getItem('value').replace(/^\s+|\s+$/g,"");
+    saveTxtButton.download='file-download-firenote-txt.txt'; 
+    saveTxtButton.href='data:text/plain;charset=utf-8,'+window.localStorage.getItem('value').replace(/^\s+|\s+$/g,"");
   });
 /*  
     var saveHTMLButton = document.getElementById('saveHTMLButton'); 
@@ -451,22 +451,23 @@ opacity:0.96;
 </script> 
    
 <script>
- 
+
   var area = document.createElement('textarea');
-   area.id= "textboxid";
- 
-  
+
   /*
-  !document.querySelector('#content').style.width = window.innerWidth;
+  document.querySelector('#content').style.width = window.innerWidth;
   document.querySelector('#content').style.width = '100vw'; 
   area.style.width = window.innerWidth;
   area.style.width=parseInt(window.innerWidth*.98, 10);
   area.style.height=parseInt(screen.height*.90, 10);
   */
+  
   area.style.width = '100vw'; 
   area.style.height = '95vh';
-  area.style.margin='0px 0px 16px';  
+  area.style.margin='0px 0px 16px';
+  
   document.querySelector('#content').appendChild(area);
+
 /*
 if (screen.width <= 580) {
  document.getElementById("viewport").setAttribute("content", "width=480");
@@ -480,18 +481,18 @@ if (localStorage.getItem('value')){
 } else {
   area.placeholder = 'Just Type.';
 }
-   
-  area.addEventListener('keyup', function () {
+
+area.addEventListener('keyup', function () {
 window.localStorage.setItem('value', area.value);
 window.localStorage.setItem('timestamp', (new Date()).getTime());
   }, false);
   
-    area.addEventListener('mouseup', function () {
+area.addEventListener('mouseup', function () {
 window.localStorage.setItem('value', area.value);
 window.localStorage.setItem('timestamp', (new Date()).getTime());
   }, false);
   
- area.addEventListener('mousedown', function () {
+area.addEventListener('mousedown', function () {
 window.localStorage.setItem('value', area.value);
 window.localStorage.setItem('timestamp', (new Date()).getTime());
   }, false);
@@ -500,27 +501,6 @@ window.addEventListener('touchend', function () {
 localStorage.setItem('value', area.value);
 localStorage.setItem('timestamp', (new Date()).getTime());
   }, false);
-  
-  /*
-document.getElementById('textboxid').addEventListener('input', function () {
-window.localStorage.setItem('value', area.value);
-window.localStorage.setItem('timestamp', (new Date()).getTime());
-  }, false);
-  */
-/*
-  function androidinput() {
-window.localStorage.setItem('value', area.value);
-window.localStorage.setItem('timestamp', (new Date()).getTime());
-  };
- 
-var s1g1 = document.getElementById("textboxid");
-s1g1.setAttribute("oninput","androidinput()");
-   
-  document.getElementById('textboxid').addEventListener('input', function () {
-window.localStorage.setItem('value', area.value);
-window.localStorage.setItem('timestamp', (new Date()).getTime());
-  }, false);
-  */
   
 function updateLog() {
 var delta = 0;
