@@ -389,8 +389,8 @@ border: 0 none #FFF;
 outline:none;
 opacity:0.96;
 }
-  #content {box-sizing: border-box; display:block; width: 100%;position:relative;}
-  textarea {box-sizing: border-box; height: 95vh; margin: 0px; display: block; width: 100%;}
+  #content {box-sizing: border-box; display:block; width: 100%; position:relative; }
+  textarea {box-sizing: border-box; display: block; width: 100%; height: 95vh; margin=0px 0px 16px; }
 </style>
  
 <style type="text/css">
@@ -466,9 +466,12 @@ opacity:0.96;
   area.style.height=parseInt(screen.height*.90, 10);
   */
   
+  /* moving to styles 1-8-22 commenting out */
+  /*
   area.style.width = '100vw'; 
   area.style.height = '95vh';
   area.style.margin='0px 0px 16px';
+  */
   
   document.querySelector('#content').appendChild(area);
 
@@ -483,7 +486,8 @@ if (screen.width <= 580) {
 if (localStorage.getItem('value')){
   area.value = localStorage.getItem('value');
 } else {
-  area.placeholder = "This is the FireNote editor! No need to login, just type and your text will be saved in the background waiting for you when you revisit this page. Only you can see it as it's stored locally on your device, not on any servers. You can also manually export the page.";
+ /* area.placeholder = "This is the FireNote editor! No need to login, just type and your text will be saved in the background waiting for you when you revisit this page. Only you can see it as it's stored locally on your device, not on any servers. You can also manually export the page.";*/
+  area.placeholder = "Welcome to FireNote. No need to login, just type and your text will save in the background waiting for you when you revisit this page.";
 }
 
 area.addEventListener('keyup', function () {
