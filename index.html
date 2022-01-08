@@ -222,7 +222,7 @@ text-shadow: 0 0.032em 0 #b0b0b0, 0px 0.15em 0.11em rgba(0,0,0,0.15), 0px 0.25em
     margin: 0;
     padding: 0.5em;
     word-break: break-word;
-    min-width:480px;
+    min-width:280px;
   }
 
   div#container {
@@ -316,7 +316,7 @@ opacity:0.90;
   padding: .3em;
   transition: background 2s; 
   text-align:center;
-
+  width:100%;
 }
 
 header h1, header h2 {
@@ -405,12 +405,15 @@ opacity:0.96;
 
 <body>
 
+<div id="page">
 <header>
   <h1>&lt; Fire&#x1f525;Note  /&gt;</h1>
-</header>  
-   <!--<div id="highlight"></div>-->
+</header>
+<!--<div id="highlight"></div>-->
 <div id="content"></div>
- <div id="highlight">
+
+<div id="footer">
+<div id="highlight">
    <p id="log"></p>
      </div>
 
@@ -429,7 +432,8 @@ opacity:0.96;
           fill="#1da1f2" />
       </svg>
    </a>
-  
+  </div>
+  </div>
 <script>
   var saveTxtButton = document.getElementById('saveTxtButton'); 
   saveTxtButton.addEventListener('click', function() { 
