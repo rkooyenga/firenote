@@ -473,10 +473,13 @@ function destroyClickedElement(event) {
     saveTxtButton.addEventListener('click', function() { 
     saveTxtButton.download='file-download-firenote-txt.txt'; 
     saveTxtButton.href='data:text/plain;charset=utf-8,'+window.localStorage.getItem('value').replace(/^\s+|\s+$/g,"");    
- */
+});
+*/
 /*  alternate enc as b64
-    saveTxtButton.href='data:text/plain;base64,charset=utf-8,'+btoa(window.localStorage.getItem('value').replace(/^\s+|\s+$/g,"")); */ 
-  });
+    saveTxtButton.href='data:text/plain;base64,charset=utf-8,'+btoa(window.localStorage.getItem('value').replace(/^\s+|\s+$/g,""));
+
+*/ 
+  
 /*  old html code
     var saveHTMLButton = document.getElementById('saveHTMLButton'); 
     saveHTMLButton.addEventListener('click', function() { 
