@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" itemscope itemtype="http://schema.org/Article">
+  <head>
+    <meta charset="utf-8">
+    <base target="_blank">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+<link rel="canonical" href="https://rkooyenga.github.io/firenote/">
+    
+    <meta http-equiv="Access-Control-Allow-Origin" content="*" >
+    <meta http-equiv="Access-Control-Allow-Methods" content="POST, GET, OPTIONS" >
+    <meta http-equiv="Access-Control-Allow-Headers" content="X-PINGOTHER, Content-Type" >
+    <meta http-equiv="Access-Control-Allow-Credentials" content="true" >  
+    <meta http-equiv="Access-Control-Max-Age" content="86400" >
+    <meta http-equiv="Access-Control-Expose-Headers" content="*">
+
+    <meta http-equiv="Vary" content="Accept-Encoding, Origin">
+    <meta http-equiv="Content-Encoding" content="gzip" >
+    <!--<meta http-equiv="Set-Cookie" content="page=Fire Note; expires=Sat, 06-Dec-1969 01:08:26 GMT" >-->
+    
+    <meta name="referrer" content="unsafe-url">
+    <meta content="origin-when-cross-origin" name="referrer" />
+
+    <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+    <meta http-equiv="cache-control" content="private" />
+    <meta http-equiv="pragma" content="no-cache" />
+    
+    <meta name="Distribution" content="Global" />
+    <meta name="Rating" content="General" />
+    <meta name="keywords" content="Fire&#x1f525;Note,FireNote, text editor, todo, tasks, lists, ray kooyenga" >
+    <meta name="description" content="Fire&#x1f525;Note is note taking made simple in the browser. ">
+    <meta name="copyright" content="copyright &copy; 2014 FireNote, Ray Kooyenga" >
+    <meta name="robot" content="index,follow;revisit-after=7days" >
+
+    <meta name="author" content="https://rkooyenga.github.io/firenote/">
+
+<!--
+    <meta name="publisher" content="">
+-->
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@rayktweets" />
+    <meta name="twitter:creator" content="@rayktweets" />
+    
+    <meta property="og:description" content="Fire&#x1f525;Note is note taking made simple in the browser. " />
+    <meta property="og:url" content="https://rkooyenga.github.io/firenote/" />
+    <meta property="og:title" content="Fire&#x1f525;Note" />
+    <meta property="og:site_name" content="Fire&#x1f525;Note"/>
+<!--
+    <meta property="og:image" content="#"/>
+    <meta property="og:image:width" content="1200"/>
+    <meta property="og:image:height" content="1200"/>
+-->
+    <title>FireNote</title> 
+    
+    <meta name="application-name" content="FireNote">
+    <meta itemprop="name" content="FireNote">
+    <meta name="mobile-web-app-title" content="FireNote">
+    <meta name="apple-mobile-web-app-title" content="FireNote">
+    <meta name="apple-mobile-web-app-status-bar-style" content="white">
+
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta id="theme-color" name="theme-color" content="#1b1b1b">
+
+<!--
+    <meta itemprop="image" content="#">
+    <link rel="apple-touch-icon" href="images/icons/icon180.png">
+    <link rel="icon" sizes="32x32" href="images/icons/icon32.png">
+    <link rel="icon" sizes="192x192" href="images/icons/icon192.png">
+    <link rel="icon" sizes="256x256" href="images/icons/icon256.png">
+    <link rel="shortcut icon" href="images/icons/icon72.png">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="/favicon.ico" type="image/png" />
+    <meta name="msapplication-config" content="/microsoft-tile.xml" />
+-->
+<link rel="shortcut icon" type="image/webp" href="data:image/webp;base64,UklGRgYEAABXRUJQVlA4TPoDAAAvh8AfEAdhkG2k88d6rBXgFQQkSf83BxJk2+J3GifItqk/7U7wXHP/QAIkAAUJQAIksLa1HsCybStq9NCYpqw0FyE22DD/aQaBh+B3RP8ngLKq1WjpFA5At54C2wHSnAFaAMCcAdIAYM7A8oP5BJD6kesJmH6gbPk2B4bykXRgKZ926fKNLpjToE4DltPQl27Yk6XTe5gLJz36sq3w7Mo2+WArWue1lGyB91gy7dcXbIG/LpgOUOUyCC2WlWdB4ySMOAkzTsIqT4LtcA6swjmwClF1eazCObAKkb+lsQqxx8JYheimLJtC/KUoqwQjlXSVYOxKMktwfgtiwDuVw4B5LYYBs6ScbvM4miWWAfc3I5uCU/ZbDAP2KSMGnoMNmsG/ZYS2Xu6gWwNWyddRZo10Qa5eVoJ/yA1Z5YLcfBQSXEO2ZR5neygi7YLyGJBgR77WfOGcDmalC9POjBQHDztIOLWho5sdaR2bTGLdmyWceqEMSheMQyNFRbsG7omyOOyonwlJTjsGbkN5nHdARJtMY3Nt0jVSJte9heiLJBW5NZyKsrk3UI80R9cGt8kPOiS6uAaXpAwla12dqy8YOWe4p+LpnSUfa3rbz4L8LOmNRGTV3paPKT2My6ywv+ajP0Dgkg91GsBfvXhMNpYE6urFMmZjTOAuLh+ObzZ0Ag8h7hxdNpBgK4R4MsBmYk7hKYRoOOZMDCk8hBDiyTBkQqVQ/9wYVB42JPgUvxUDtixMKTQO8WSYsvBN4F+4HwzfLID/Xe00DLAZWBK4iN2aw2Rg4LsJT44+A4rtJtKQx7PgvolEsB5u5rqJZMbDDUw3kY4+nOa5iYRwOLD+idCaZznYxtKK4IZnOtjC0YrwB89wsJHhJSK+eHSu3lWEGrzqYH28i4jYMuFgOtpDRKxRoreI2RbpFqNBid4i5jNz30j3GA3Yu4ONkeoYrU/9H0cfbIrzEjHhK8QrynCwJc5fjMbrIpoo5mA2ziPGw+cjhGhjbAcjFaVh+hNCNBE6OvqQytXjXQkhxDtsONyainjvfC7i9xm2Ho66VC4fx7MSzjZI0fGnGI8oom4/7/9G7D6CTAasjPAXJ/QZ0lEOxwjPFF4hJgtWhqHiqxCoKI8mwo3vFrJmgnTYk+8ZMFIuNxmEmquB/5fyOYc9maq3n7IZoTEIV54W3spSVvugT8Vxh7eylNk+BK8q3h3eylJ2+xC8qkhVC+/eUob7ELzqKJcXvCfK8xSCzz2sbuHdrZTrtQsA3rfK69rCf7CUb9uHAHg+rk3TNNfH/wf+aqW8L11QbGko/6ZLQI6Wimg6ps5YKubSy2jdsFJh574Lk99poyLbZRy0VkCndT/OGx0c">
+
+<link rel=stylesheet href="styles.css">
+
+<!--
+<noscript>
+<link rel="font" href="https://d39dlwgeopmdw0.cloudfront.net/assets/web/resources/fonts/GuardianTextEgyp-Regular-Web.woff">
+<link rel="font" href="https://d39dlwgeopmdw0.cloudfront.net/assets/web/resources/fonts/NationalWebLF-Regular.woff">
+<link rel="font" href="https://d39dlwgeopmdw0.cloudfront.net/assets/web/resources/fonts/NationalWebLF-Extrabold.woffs">
+</noscript>
+-->
+   
+</head>
+
+<body>
+
+<header>
+  <h1>&lt; Fire&#x1f525;Note  /&gt;</h1>
+</header>  
+   <!--<div id="highlight"></div>-->
+<div id="content"></div>
+ <div id="highlight">
+   <p id="log"></p>
+     </div>
+  
+<a onclick="javascript:saveTxtButton;" class="text-button" id="saveTxtButton" download="">Export</a>
+ 
+    <a id="twitter" href="https://twitter.com/intent/follow?original_referer=https%3A%2F%2F%2Frkooyenga.github.com%2Ffirenote%2F&ref_src=twsrc%5Etfw&region=follow_link&screen_name=rayktweets&tw_p=followbutton"
+      rel="noopener" target="_blank" title="Follow @rayktweets">
+      <svg viewbox="0 0 400 400">
+        <title>Follow @rayktweets</title>
+        <path d="M153.62,301.59c94.34,0,145.94-78.16,145.94-145.94,0-2.22,0-4.43-.15-6.63A104.36,104.36,0,0,0,325,122.47a102.38,102.38,0,0,1-29.46,8.07,51.47,51.47,0,0,0,22.55-28.37,102.79,102.79,0,0,1-32.57,12.45,51.34,51.34,0,0,0-87.41,46.78A145.62,145.62,0,0,1,92.4,107.81a51.33,51.33,0,0,0,15.88,68.47A50.91,50.91,0,0,1,85,169.86c0,.21,0,.43,0,.65a51.31,51.31,0,0,0,41.15,50.28,51.21,51.21,0,0,1-23.16.88,51.35,51.35,0,0,0,47.92,35.62,102.92,102.92,0,0,1-63.7,22A104.41,104.41,0,0,1,75,278.55a145.21,145.21,0,0,0,78.62,23"
+          fill="#1da1f2" />
+      </svg>
+   </a>
+  
+<script src="script.js"></script>
+</body>
+</html>
