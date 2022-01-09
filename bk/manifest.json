@@ -1,0 +1,90 @@
+  {
+  "short_name": "Fire&#x1f525;Note",
+  "name": "Fire&#x1f525;Note : Make writing, simple again.",
+  "description": "Fire&#x1f525;Note is writing and notes made simple saved in browser local storage, no sign in required",
+  "dir": "auto",
+  "lang": "en-US",
+  "display": "standalone",
+  "orientation": "any",
+  "start_url": "/index.html?homescreen=1",
+   "scope": "/",
+ "background_color": "#FFF",
+  "theme_color": "#1b1b1b",
+   "icons": [
+   {
+   "src": "default_icon.png",
+   "sizes": "192x192",
+   "type": "image/png",
+   "density": "1.0"
+   },   {  "src": "img/icon_16x16.png", 
+      "sizes": "16x16",
+      "type": "image/png", 
+      "density": "1.0" 
+    },  {     "src": "img/icon_18x18.png", 
+      "sizes": "18x18",
+      "type": "image/png", 
+      "density": "1.0" 
+    },  {     "src": "img/icon_22x22.png", 
+      "sizes": "22x22",
+      "type": "image/png", 
+      "density": "1.0" 
+    },  {     "src": "img/icon_24x24.png", 
+      "sizes": "24x24",
+      "type": "image/png", 
+      "density": "1.0" 
+    },  {     "src": "img/icon_32x32.png", 
+      "sizes": "32x32",
+      "type": "image/png", 
+      "density": "1.0" 
+    },  {     "src": "img/icon_36x36.png", 
+      "sizes": "36x36",
+      "type": "image/png", 
+      "density": "1.0" 
+    },  {     "src": "img/icon_48x48.png", 
+      "sizes": "48x48",
+      "type": "image/png", 
+      "density": "1.0" 
+    },  {     "src": "img/icon_64x64.png", 
+      "sizes": "64x64",
+      "type": "image/png", 
+      "density": "1.0" 
+    },  {     "src": "img/icon_72x72.png", 
+      "sizes": "72x72",
+      "type": "image/png", 
+      "density": "1.0" 
+    },  {     "src": "img/icon_90x90.png", 
+      "sizes": "90x90",
+      "type": "image/png", 
+      "density": "1.0" 
+    },  {     "src": "img/icon_96x96.png", 
+      "sizes": "96x96",
+      "type": "image/png", 
+      "density": "1.0" 
+    },  {     "src": "img/icon_128x128.png", 
+      "sizes": "128x128",
+      "type": "image/png", 
+      "density": "1.0" 
+    },  {     "src": "img/icon_144x144.png", 
+      "sizes": "144x144",
+      "type": "image/png", 
+      "density": "1.0" 
+    },  {     "src": "img/icon_160x160.png", 
+      "sizes": "160x160",
+      "type": "image/png", 
+      "density": "1.0" 
+    },  {     "src": "img/icon_192x192.png", 
+      "sizes": "192x192",
+      "type": "image/png", 
+      "density": "1.0" 
+    },  {     "src": "img/icon_256x256.png", 
+      "sizes": "256x256",
+      "type": "image/png", 
+      "density": "1.0" 
+    },  {     "src": "img/icon_512x512.png", 
+      "sizes": "512x512",
+      "type": "image/png", 
+      "density": "1.0" 
+    } 
+   ]
+} 
+ 
