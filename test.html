@@ -438,13 +438,46 @@ header{
    </a>
   
 <script>
-  var saveTxtButton = document.getElementById('saveTxtButton'); 
-  saveTxtButton.addEventListener('click', function() { 
+  
+  function saveTextAsFile() {
+  var textToWrite = window.localStorage.getItem('value').replace(/^\s+|\s+$/g,"");
+  var textFileAsBlob = new Blob([ textToWrite ], { type: 'text/plain' });
+  var fileNameToSaveAs = "file.txt"; //filename.extension
+
+  var downloadLink = document.createElement("a");
+  downloadLink.download = fileNameToSaveAs;
+  downloadLink.innerHTML = "Download File";
+  if (window.webkitURL != null) {
+    // Chrome allows the link to be clicked without actually adding it to the DOM.
+    downloadLink.href = window.webkitURL.createObjectURL(textFileAsBlob);
+  } else {
+    // Firefox requires the link to be added to the DOM before it can be clicked.
+    downloadLink.href = window.URL.createObjectURL(textFileAsBlob);
+    downloadLink.onclick = destroyClickedElement;
+    downloadLink.style.display = "none";
+    document.body.appendChild(downloadLink);
+  }
+
+  downloadLink.click();
+} 
+var button = document.getElementById('saveTxtButton');
+button.addEventListener('click', saveTextAsFile);
+
+function destroyClickedElement(event) {
+  // remove the link from the DOM
+  document.body.removeChild(event.target);
+}
+  
+ /* old txt code
+    var saveTxtButton = document.getElementById('saveTxtButton'); 
+    saveTxtButton.addEventListener('click', function() { 
     saveTxtButton.download='file-download-firenote-txt.txt'; 
-    saveTxtButton.href='data:text/plain;base64,charset=utf-8,'+btoa(window.localStorage.getItem('value').replace(/^\s+|\s+$/g,""));
-/*    saveTxtButton.href='data:text/plain;charset=utf-8,'+window.localStorage.getItem('value').replace(/^\s+|\s+$/g,""); */
+    saveTxtButton.href='data:text/plain;charset=utf-8,'+window.localStorage.getItem('value').replace(/^\s+|\s+$/g,"");    
+ */
+/*  alternate enc as b64
+    saveTxtButton.href='data:text/plain;base64,charset=utf-8,'+btoa(window.localStorage.getItem('value').replace(/^\s+|\s+$/g,"")); */ 
   });
-/*  
+/*  old html code
     var saveHTMLButton = document.getElementById('saveHTMLButton'); 
     saveHTMLButton.addEventListener('click', function() { 
     saveHTMLButton.download='file-download-firenote-txt.html'; 
