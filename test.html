@@ -445,7 +445,7 @@ header{
   
   function saveTextAsFile() {
   var textToWrite = window.localStorage.getItem('value').replace(/^\s+|\s+$/g,"");
-  var textFileAsBlob = new Blob([ textToWrite ], { type: 'text/plain' });
+  var textFileAsBlob = new Blob([ textToWrite ], { type: 'text/plain;charset=UTF-8' });
   var fileNameToSaveAs = "file.txt"; //filename.extension
 
   var downloadLink = document.createElement("a");
