@@ -441,7 +441,8 @@ header{
   var saveTxtButton = document.getElementById('saveTxtButton'); 
   saveTxtButton.addEventListener('click', function() { 
     saveTxtButton.download='file-download-firenote-txt.txt'; 
-    saveTxtButton.href='data:text/plain;charset=utf-8,'+window.localStorage.getItem('value').replace(/^\s+|\s+$/g,"");
+    saveTxtButton.href='data:text/plain;base64,charset=utf-8,'+btoa(window.localStorage.getItem('value').replace(/^\s+|\s+$/g,""));
+/*    saveTxtButton.href='data:text/plain;charset=utf-8,'+window.localStorage.getItem('value').replace(/^\s+|\s+$/g,""); */
   });
 /*  
     var saveHTMLButton = document.getElementById('saveHTMLButton'); 
