@@ -35,16 +35,6 @@ text-rendering: optimizeLegibility;
 -webkit-font-smoothing:antialiased;
 -moz-font-smoothing:antialiased;
 
-font-variant-ligatures: common-ligatures;
-  -moz-font-feature-settings: "liga", "clig";
-  -webkit-font-feature-settings: "liga", "clig";
-  font-feature-settings: "liga", "clig";
-
-font-variant-numeric: lining-nums;
-  -moz-font-feature-settings: "lnum";
-  -webkit-font-feature-settings: "lnum";
-  font-feature-settings: "lnum";
-
 text-shadow: 4px 4px 9px #000;
 text-shadow: 0 0.032em 0 #b0b0b0, 0px 0.15em 0.11em rgba(0,0,0,0.15), 0px 0.25em 0.021em rgba(0,0,0,0.1), 0px 0.32em 0.32em rgba(0,0,0,0.1);}
   }
