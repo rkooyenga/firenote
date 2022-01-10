@@ -1,16 +1,17 @@
 /* section main, text styling */
 
-
 *, :after, :before {
     box-sizing: border-box;
 }
 html,body{
-background-color:#fff;background:transparent;
+background-color:#fff;
+background:transparent;
 box-shadow:2px 20px 15px linear-gradient(rgba(0,0,0,0.05) 10%,whitesmoke 30%,rgba(0,0,0,0.1) 50%,lightblue 72%,rgba(0,0,0,0.22) 100%);
 }
 
 html,body,div,p,textarea,input[type=text],*,a,a.link,button,h1,h2,header{
 font-family: Roboto,Arial,Helvetica,sans-serif;
+
 color: #414141;
 font-weight: 400;
 font-style: normal;
@@ -19,6 +20,7 @@ cursor: auto;
 text-align: left;
 overflow-wrap: break-word;
 word-wrap: break-word;
+
 background-image:transparent;
 background-color:transparent;
   -ms-background-color:transparent;
@@ -26,33 +28,12 @@ background-color:transparent;
   -moz-background-color:transparent;
   -blink-background-color:transparent;
   -o-background-color:transparent;
+
 -webkit-over-scrolling:touch;
 text-decoration:none;
 text-rendering: optimizeLegibility;
 -webkit-font-smoothing:antialiased;
 -moz-font-smoothing:antialiased;
-    font-variant-ligatures: no-common-ligatures;
-  -moz-font-feature-settings: "liga" 0, "clig" 0;
-  -ms-font-feature-settings: "liga" 0, "clig" 0;
-  -webkit-font-feature-settings: "liga" 0, "clig" 0;
-  font-feature-settings: "liga" 0, "clig" 0;
-    font-variant-ligatures: contextual;
-    -moz-font-feature-settings: "calt";
-    -ms-font-feature-settings: "calt";
-    -webkit-font-feature-settings: "calt";
-    font-feature-settings: "calt";
-text-shadow: 4px 4px 9px #000;
-
-  font-variant-ligatures: no-common-ligatures;
-  -moz-font-feature-settings: "liga" 0, "clig" 0;
-  -ms-font-feature-settings: "liga" 0, "clig" 0;
-  -webkit-font-feature-settings: "liga" 0, "clig" 0;
-  font-feature-settings: "liga" 0, "clig" 0;
-    font-variant-ligatures: contextual;
-    -moz-font-feature-settings: "calt";
-    -ms-font-feature-settings: "calt";
-    -webkit-font-feature-settings: "calt";
-    font-feature-settings: "calt";
 
 text-shadow: 4px 4px 9px #000;
 text-shadow: 0 0.032em 0 #b0b0b0, 0px 0.15em 0.11em rgba(0,0,0,0.15), 0px 0.25em 0.021em rgba(0,0,0,0.1), 0px 0.32em 0.32em rgba(0,0,0,0.1);}
@@ -116,10 +97,10 @@ text-shadow: 0 0.032em 0 #b0b0b0, 0px 0.15em 0.11em rgba(0,0,0,0.15), 0px 0.25em
   }
 
   div#highlight {
-    background-color: #eee;
-    font-size: .8em;
-    margin: 0 0 3px 0;
-    padding: 0.3em .3em;
+    background-color: rgba(240,248,255,.3);
+    font-size: .5em;
+    margin: 0 0 2px 0;
+    padding: 0.2em .2em;
     line-height:1;
   }
 
@@ -164,13 +145,13 @@ text-shadow: 0 0.032em 0 #b0b0b0, 0px 0.15em 0.11em rgba(0,0,0,0.15), 0px 0.25em
 
   @media (max-width: 550px) {
     h1 {
-      font-size: 22px;
+      font-size: 20px;
     }
   }
 
   @media (max-width: 450px) {
     h1 {
-      font-size: 18px;
+      font-size: 16px;
     }
   }
 
@@ -178,9 +159,12 @@ text-shadow: 0 0.032em 0 #b0b0b0, 0px 0.15em 0.11em rgba(0,0,0,0.15), 0px 0.25em
 /* section header */
 
 header {
-
+/*
 background: linear-gradient(to bottom, rgba(255.255.255.13) 0px, rgba(255.255.255.013) 100%),linear-gradient(to bottom, rgba(255.255.255.13) 0px, rgba(255.255.255.013) 100%);
 opacity:0.90;
+*/
+background: rgba(240,248,255,0.1);
+opacity:0.80;
    text-decoration: none;color: #eee; 
   -moz-box-shadow: 0 2px 8px -3px rgba(0,0,0,.5), 0 1.4em 2em -0.7em rgba(255, 255, 255, .2) inset;
   -webkit-box-shadow: 0 2px 8px -3px rgba(0,0,0,.5), 0 1.4em 2em -0.7em rgba(255, 255, 255, .2) inset;
@@ -210,14 +194,15 @@ header{
     width: 100%;
     /* margin-bottom: 60px; */
     float: left;
-    max-width: 1600px;
 }
 
 /* section content */
 
 
 p{
-  font-size:1.27em;line-height:1.3em;font-weight:light;
+  font-size:1.27em;
+line-height:1.3em;
+font-weight:light;
   border:none;
 background: linear-gradient(to bottom, rgba(255.255.255.13) 0px, rgba(255.255.255.013) 100%),linear-gradient(to bottom, rgba(255.255.255.13) 0px, rgba(255.255.255.013) 100%);
 opacity:0.90;
@@ -241,9 +226,11 @@ input[type=text], textarea {
   outline: none;
   padding: 3px 0px 3px 3px;
   margin: 5px 1px 3px 0px;
-  border: 0 #FFF;
-padding: 2em;
-font-size:1.67em;line-height:1.6em;font-weight:light;color:#2f2f2f;
+padding: 1em;
+font-size:1.3em;
+line-height:1.4em;
+font-weight:light;
+color:#2f2f2f;
 border:none;
 background: linear-gradient(to bottom, rgba(255.255.255.13) 0px, rgba(255.255.255.013) 100%),linear-gradient(to bottom, rgba(255.255.255.13) 0px, rgba(255.255.255.013) 100%);
 opacity:0.90;
@@ -256,13 +243,18 @@ input[type=text]:focus, textarea:focus {
   /*box-shadow: 0 0 5px rgba(81, 203, 238, 1);*/
   padding: 3px 0px 3px 3px;
   margin: 5px 1px 3px 0px;
-padding:1em;
-font-size:1.67em;line-height:1.6em;font-weight:light;color:#2f2f2f;background:transparent;
+padding:.5em;
+font-size:1.3em;
+line-height:1.45em;
+font-weight:light;
+color:#2f2f2f;
+background:transparent;
 background-color:#FFF;
 border: 0 none #FFF; 
 outline:none;
 opacity:0.96;
 }
+
   #content {box-sizing: border-box; display:block; width: 100%; position:relative; }
   textarea {box-sizing: border-box; display: block; width: 100%; height: 95vh; margin=0px 0px 16px; }
 
