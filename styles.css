@@ -11,6 +11,7 @@ box-shadow:2px 20px 15px linear-gradient(rgba(0,0,0,0.05) 10%,whitesmoke 30%,rgb
 
 html,body,div,p,textarea,input[type=text],*,a,a.link,button,h1,h2,header{
 font-family: Roboto,Arial,Helvetica,sans-serif;
+
 color: #414141;
 font-weight: 400;
 font-style: normal;
@@ -19,6 +20,7 @@ cursor: auto;
 text-align: left;
 overflow-wrap: break-word;
 word-wrap: break-word;
+
 background-image:transparent;
 background-color:transparent;
   -ms-background-color:transparent;
@@ -26,33 +28,22 @@ background-color:transparent;
   -moz-background-color:transparent;
   -blink-background-color:transparent;
   -o-background-color:transparent;
+
 -webkit-over-scrolling:touch;
 text-decoration:none;
 text-rendering: optimizeLegibility;
 -webkit-font-smoothing:antialiased;
 -moz-font-smoothing:antialiased;
-    font-variant-ligatures: no-common-ligatures;
-  -moz-font-feature-settings: "liga" 0, "clig" 0;
-  -ms-font-feature-settings: "liga" 0, "clig" 0;
-  -webkit-font-feature-settings: "liga" 0, "clig" 0;
-  font-feature-settings: "liga" 0, "clig" 0;
-    font-variant-ligatures: contextual;
-    -moz-font-feature-settings: "calt";
-    -ms-font-feature-settings: "calt";
-    -webkit-font-feature-settings: "calt";
-    font-feature-settings: "calt";
-text-shadow: 4px 4px 9px #000;
 
-  font-variant-ligatures: no-common-ligatures;
-  -moz-font-feature-settings: "liga" 0, "clig" 0;
-  -ms-font-feature-settings: "liga" 0, "clig" 0;
-  -webkit-font-feature-settings: "liga" 0, "clig" 0;
-  font-feature-settings: "liga" 0, "clig" 0;
-    font-variant-ligatures: contextual;
-    -moz-font-feature-settings: "calt";
-    -ms-font-feature-settings: "calt";
-    -webkit-font-feature-settings: "calt";
-    font-feature-settings: "calt";
+font-variant-ligatures: common-ligatures;
+  -moz-font-feature-settings: "liga", "clig";
+  -webkit-font-feature-settings: "liga", "clig";
+  font-feature-settings: "liga", "clig";
+
+font-variant-numeric: lining-nums;
+  -moz-font-feature-settings: "lnum";
+  -webkit-font-feature-settings: "lnum";
+  font-feature-settings: "lnum";
 
 text-shadow: 4px 4px 9px #000;
 text-shadow: 0 0.032em 0 #b0b0b0, 0px 0.15em 0.11em rgba(0,0,0,0.15), 0px 0.25em 0.021em rgba(0,0,0,0.1), 0px 0.32em 0.32em rgba(0,0,0,0.1);}
