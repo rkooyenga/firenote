@@ -4,7 +4,7 @@ Firenote is a simnple browser based text editor project. It features a pleasant 
 
 Functionality is straightforward: just visit [firenote](https://rkooyenga.github.io/firenote) and start typing. You can leave the page, close the browser, hit refresh, etc...and your note will still be there. Optionally you can also export a text file to your download directory for a hard copy.
 
-``note: although this project was 1st built in many years ago, I'm actively re-writing it. So it changes often while I settle on a new look and add some new features.`
+``note: although this project was 1st built in many years ago, I'm actively re-writing it. So it changes often while I settle on a new look and add some new features.``
 
 <!-- 
 [FireNote](http://firenote.info)
