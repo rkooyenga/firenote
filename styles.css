@@ -223,7 +223,7 @@ input[type=text], textarea {
   margin: 5px 1px 3px 0px;
 padding: 1em;
 font-size:1.3em;
-line-height:1.5em;
+line-height:1.4em;
 font-weight:light;
 color:#2f2f2f;
 border:none;
@@ -240,7 +240,7 @@ input[type=text]:focus, textarea:focus {
   margin: 5px 1px 3px 0px;
 padding:.5em;
 font-size:1.3em;
-line-height:1.5em;
+line-height:1.45em;
 font-weight:light;
 color:#2f2f2f;
 background:transparent;
