@@ -41,17 +41,18 @@ function saveTextAsFile() {
 var textToWrite = window.localStorage.getItem('value').replace(/^\s+|\s+$/g,"");
 var BOM = new Uint8Array([0xEF,0xBB,0xBF]);
 var textFileAsBlob = new Blob([ BOM, textToWrite ], { type: 'text/plain;charset=UTF-8' });
-var exportFilename = "firenote-export-file.txt"; 
+var fileDate = Date.now();
+var exportFilename = "firenote-export-file-" + fileDate + ".txt"; 
 
 var downloadLink = document.createElement("a");
 downloadLink.download = exportFilename;
 downloadLink.innerHTML = "Download File";
 
 if (window.webkitURL != null) {
-  // Chrome allows the link to be clicked without actually adding it to the DOM.
+  /* Chrome allows the link to be clicked without actually adding it to the DOM */
   downloadLink.href = window.webkitURL.createObjectURL(textFileAsBlob);
 } else {
-  // Firefox requires the link to be added to the DOM before it can be clicked.
+  /* Firefox requires the link to be added to the DOM before it can be clicked */
   downloadLink.href = window.URL.createObjectURL(textFileAsBlob);
   downloadLink.onclick = destroyClickedElement;
   downloadLink.style.display = "none";
@@ -65,6 +66,5 @@ var button = document.getElementById('saveTxtButton');
 button.addEventListener('click', saveTextAsFile);
 
 function destroyClickedElement(event) {
-  // remove the link from the DOM
   document.body.removeChild(event.target);
 }
