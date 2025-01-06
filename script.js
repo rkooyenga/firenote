@@ -9,6 +9,8 @@ updateLog();
 setInterval(updateLog, 20000); 
 
 var area = document.createElement('textarea');
+area.classList.add('scroll');
+
 document.querySelector('#content').appendChild(area);
 
 if (localStorage.getItem('value')){
