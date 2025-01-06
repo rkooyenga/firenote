@@ -304,3 +304,6 @@ body:hover {
     background: rgba(255,0,0,0.4); 
 }
 
+.scroll::-webkit-scrollbar {
+   display: none;
+ }
